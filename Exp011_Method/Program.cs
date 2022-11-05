@@ -1,4 +1,4 @@
-﻿int[] array = { 1, 2, 31, 55, 43, 5, 6, 3 };
+﻿int[] array = { 1, 2, 31, 55, 43, 5, 6, 43 };
 
 int n = array.Length;
 int find = 43;
