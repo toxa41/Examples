@@ -1,14 +1,16 @@
-﻿Console.WriteLine("Введите целое число");
-int n = Convert.ToInt32(Console.ReadLine());
-
-void SumNumbers(int n)
+﻿int[,] pic = new int[,];
+void PrintImage(int[,] image)
 {
-    int a = 1;
-    for (int i = 1; i <= n; i++) ;
+    for (int i = 0; i < image.GetLength(0); i ++)
     {
-        a = a * i;
+        for (int j = 0; j < image.GetLength(1); j ++)
+        {
+            // image, j] = new Random().Next(1, 10);//[1;10]
+            if(image[i,j] == 0) Console.Write($" ");
+            else Console.Write($"+");
+        }
+    Console.WriteLine(); 
     }
-    Console.WriteLine($"Произведение всех чисел от 1 до {n} равна {a}");
-
 }
-SumNumbers(n);
+
+PrintImage(pic);
